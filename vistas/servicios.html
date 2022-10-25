@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERNET SAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>SERVICIOS OFRECIDOS POR LA EMPRESA</h1>
+        <form>
+    <div class= "fied">
+        <label>Tipo de Servicio</label>
+        <select>
+            <option selected disabled>Seleccione una Opción</option>
+            <option>Conexion Pri</option>
+            <option>Reconexion S</option>
+            <option>Cancelación</option>
+        </select>
+        <div class= "fied">
+         <label>Fecha de Solicitud</label>
+            <input type= "date" name="fecha de Solicitud" required autocomplete>
+        </div>
+    <div class= "fied">
+        <label>Estado Solicitud</label>
+        <select>
+            <option selected disabled>Seleccione una Opción</option>
+            <option>Activa</option>
+            <option>En Proceso</option>
+            <option>Atendida</option>
+        </select>
+    <div class= "fied">
+            <label>Cédula</label>
+            <input type= "number" name="cédula" required autocomplete>
+    </div>
+    </div>
+            <div>
+                <a href="./ingreso.html">
+                    <input type="submit" value="Guardar">
+                </a>
+                
+            </div>
+        <div>
+             <input type="submit" value="Limpiar">
+        </div>
+            <h1>VERIFICACIÓN DATOS DE CARTERA</h1>
+                <form>
+                    <div class= "fied">
+                        <label>Tiene Cuenta Vencidas</label>
+                        <select>
+                        <option selected disabled>Seleccione una Opción</option>
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+    <div class= "fied">
+                <label>Posee Cartera Vencida</label>
+                    <select>
+                        <option selected disabled>Seleccione una Opción</option>
+                        <option>Si</option>
+                        <option>No</option>
+                    </select>
+                <div>
+                    <input type="submit" value="Ir a Cartera Vencida">
+                </div>
+        </form>
+   </div>
+</body>
+</html>

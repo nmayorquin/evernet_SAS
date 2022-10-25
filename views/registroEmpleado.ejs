@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERNET SAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="formulario">
+        <h1>Registrarse</h1>
+        <form action="/salvarEmpleado" method="post"> <!--SE DEFINE EL MÉTODO POST PARA NO TENER CONFLICTOS CON LA RUTA DE CONEXIÓN-->
+            <div class= "fied">
+                <label>Nombres y Apellidos</label>
+                <input id="nombreApellidoEmpleado" type= "text" name="nombreApellidoEmpleado" required autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Cédula</label>
+                <input id="cedulaEmpleado" type="number" name="cedulaEmpleado" required autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Email</label>
+                <input id="emailEmpleado" type= "email" name="emailEmpleado" required autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Contraseña</label>
+                <input id="passEmpleado" type= "password" name="passEmpleado" required autocomplete>
+            </div>
+            
+                <input type="submit" value="Registrarme">
+            
+            <a class="regresoLogin" href="/">Volver</a>
+            
+            
+            </div>
+        </form>
+   </div>
+</body>
+</html>
