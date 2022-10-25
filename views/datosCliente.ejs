@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERNET SAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="formulario">
+        <h1>DATOS DEL CLIENTE</h1>
+        <form action="/salvarCliente" method="post">
+            <div class= "fied">
+                <label>Nombres y Apellidos</label>
+                <input id="nombresCliente" type= "text" name="nombresCliente" autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Cédula</label>
+                <input id="cedulaCliente" type= "number" name="cedulaCliente"  autocomplete>
+            </div>
+            <div>
+           
+            <div class= "fied">
+                <label>Ciudad</label>
+                <input id="cityCliente" type= "text" name="cityCliente" autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Dirección</label>
+                <input id="dirCliente" type= "text" name="dirCliente" autocomplete>
+            </div> 
+           
+            <div class= "fied">
+                <label>Teléfono</label>
+                <input id="telefonoCliente" type= "number" name="telefonoCliente"  autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Email</label>
+                <input id="emailCliente" type= "email" name="emailCliente" autocomplete>
+            </div>
+            <div class= "fied">
+                <label>Género</label>
+                <select id="generoCliente" name="generoCliente">
+                    <option selected disabled>Seleccione una Opción</option>
+                    <option value="mujer">Mujer</option>
+                    <option value="hombre">Hombre</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Agregar">
+            </div>
+            <div>
+                <a class="cancelarCliente" href="registroClientes">Cancelar</a>
+            </div>
+
+        </form>
+   </div>
+</body>
+</html>

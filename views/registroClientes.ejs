@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVERNET SAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="estilostabla">
+        <table>
+            <thead>     <!--encabezado-->                
+                <tr> 
+                    <th>Cédula Cliente</th>
+                    <th>Nombres y apellidos</th> <!--etiqueta de uso del encabezado para la tabla para títulos y queda centralizado por defecto--> 
+                    <th>Género</th>
+                    <th>Ciudad</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <% results.forEach((cliente)=>{%>
+                <tr> <!--fila-->
+                    <td><%= cliente.cedulaCliente %></td>
+                    <td><%= cliente.NombresApellidosCliente %></td> <!--etiqueta de uso del encabezado para la tabla para títulos y queda centralizado por defecto--> 
+                    <td><%= cliente.GeneroCliente %></td>
+                    <td><%= cliente.CiudadCliente %></td>
+                    <td><%= cliente.DireccionCliente %></td>
+                    <td><%= cliente.telefonoCliente %></td>
+                    <td><%= cliente.emailCliente %></td>
+                    <td>
+                       <a href="./editar/<%= cliente.cedulaCliente %>">editar</a> <!--en editar se coloca el id del usuario para que capture los registros e editar-->
+                        <a href="./eliminar/<%= cliente.cedulaCliente %>"> eliminar</a>
+
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
